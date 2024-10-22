@@ -51,8 +51,8 @@ body {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: "Lora", serif;
-  color: #555;
+  font-family: "Inter", sans-serif;
+  color: #444;
 }
 
 h1,
@@ -61,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  color:#d47e00;
+  color: #3939af;
 }
 
 p {
@@ -84,7 +84,7 @@ hr {
 
 /*General links color*/
 a {
-  color: #54927a;
+  color: #3333ff;
   text-decoration: none;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -116,7 +116,7 @@ a.animated_link:before {
   bottom: -5px;
   opacity: 1;
   left: 0;
-  background-color: #54927a;
+  background-color: #3333ff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -135,7 +135,7 @@ a.animated_link:hover:before {
 a.animated_link.active {
   position: relative;
   text-decoration: none;
-  color: #54927a;
+  color: #3333ff;
 }
 a.animated_link.active:before {
   content: "";
@@ -145,7 +145,7 @@ a.animated_link.active:before {
   bottom: -5px;
   opacity: 1;
   left: 0;
-  background-color: #54927a;
+  background-color: #3333ff;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -156,7 +156,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #54927a;
+  background: #3333ff;
   outline: none;
   cursor: pointer;
   display: inline-block;
@@ -236,7 +236,7 @@ a.btn_scroll_to {
   font-size: 32px;
   font-size: 2rem;
   z-index: 3;
-  color: #54927a;
+  color: #3333ff;
   text-transform: uppercase;
   position: absolute;
   left: 50%;
@@ -417,15 +417,16 @@ a.btn_scroll_to {
 }
 
 .content-left-bg-color {
-  background-color: #54927a;
+  background-color: #3333ff;
 }
 
 .content-left-wrapper {
   display: flex;
   height: 100%;
   min-height: 100%;
-  padding: 0 90px;
+  padding: 0 30px 0 80px;
   position: relative;
+  color: #fff;
 }
 @media (max-width: 991px) {
   .content-left-wrapper {
@@ -435,33 +436,34 @@ a.btn_scroll_to {
 }
 @media (max-width: 767px) {
   .content-left-wrapper {
-    height: 90vh !important;
+    height: 95vh !important;
     padding: 95px 15px 60px 15px;
   }
 }
-.content-left-wrapper small {
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  display: inline-block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  opacity: 0.8;
-  font-weight: 500;
-  color: #555;
-}
 .content-left-wrapper h1 {
+  color: #fff;
   margin-top: 0;
   font-size: 28px;
   font-size: 1.75rem;
 }
 .content-left-wrapper h1 small {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 5px;
   display: block;
-  letter-spacing: 2px;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .content-left-wrapper h1 em {
   display: block;
-  font-size: 52px;
-  font-size: 3.25rem;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ff353e;
+  font-size: 92px;
+  font-size: 5.75rem;
+  line-height: 1.1;
 }
 
 .content-right {
@@ -494,11 +496,6 @@ a#logo {
     top: 15px;
   }
 }
-@media (max-width: 767px) {
-  .social {
-    display: none;
-  }
-}
 .social ul {
   margin: 0;
   padding: 0;
@@ -510,8 +507,8 @@ a#logo {
   list-style: none;
 }
 .social ul li a {
-  color: #555;
-  opacity: .6;
+  color: #fff;
+  opacity: 1;
   text-align: center;
   line-height: 35px;
   display: block;
@@ -541,6 +538,13 @@ a#logo {
   margin: 0 10px 0 0;
   list-style: none;
 }
+.social.mobile ul li a {
+  color: #555;
+  opacity: 0.6;
+}
+.social.mobile ul li a:hover {
+  opacity: 1;
+}
 @media (max-width: 767px) {
   .social.mobile {
     display: block;
@@ -554,10 +558,23 @@ a#logo {
   }
 }
 .copy a {
-  color: #555;
+  color: #444;
 }
 .copy a:hover {
-  color: #54927a;
+  color: #3333ff;
+}
+
+/* menu */
+.cd-overlay-nav span {
+  background-color: #3333ff !important;
+}
+
+.cd-overlay-content span {
+  background-color: #3333ff !important;
+}
+
+.no-touch .cd-primary-nav a:hover {
+  color: #3333ff !important;
 }
 
 /*============================================================================================*/
@@ -641,7 +658,7 @@ button.submit {
   cursor: pointer;
   outline: none;
   text-align: center;
-  background: #54927a;
+  background: #3333ff;
   position: relative;
   font-size: 16px;
   font-size: 1rem;
@@ -885,12 +902,22 @@ a.btn_info {
   position: absolute;
   left: 30px;
   bottom: 30px;
-  background-color: #fff;
-  border-radius: 3px;
-  padding: 8px 15px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+a.btn_info i {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  margin-top: 2px;
+}
+a.btn_info:hover i {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(5px);
 }
 @media (max-width: 767px) {
   a.btn_info {
@@ -905,12 +932,12 @@ a.btn_info {
 .strip_info h3 {
   font-size: 24px;
   font-size: 1.5rem;
-  color: #54927a;
+  color: #444;
 }
 .strip_info .date_event {
   font-size: 21px;
   font-size: 1.3125rem;
-  color: #54927a;
+  color: #444;
   font-weight: 500;
 }
 .strip_info .date_event small {
@@ -976,7 +1003,7 @@ a.btn_info {
   margin: 30px 0 20px 0;
 }
 .countdown h4 {
-  color: #555;
+  color: #fff;
   font-weight: 500;
   font-size: 26px;
   font-size: 1.625rem;
@@ -988,12 +1015,12 @@ a.btn_info {
 #minutes,
 #seconds {
   border-radius: 5px;
-  border: 2px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   width: 60px;
   height: 60px;
   font-size: 24px;
-  line-height: 56px;
+  line-height: 60px;
   font-weight: 400;
 }
 
@@ -1038,11 +1065,13 @@ a.btn_info {
   margin-bottom: 1rem;
 }
 .form-group.terms {
-  background-color: #4b836d;
-  background-color: rgba(84, 146, 122, 0.075);
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.03);
   padding: 12px 0 0 0;
   text-align: left;
   padding: 8px 5px 5px 8px;
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
 .form-group.terms .container_check {
   margin-bottom: 0;
@@ -1114,14 +1143,14 @@ span.error:after {
   font-size: 15px;
   font-size: 0.9375rem;
   height: calc(2.95rem + 2px);
-  background-color: #4b836d;
-  background-color: rgba(84, 146, 122, 0.075);
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 .form-control:focus {
   border-color: rgba(0, 0, 0, 0.15);
   outline: 0;
-  background-color: #4b836d;
-  background-color: rgba(84, 146, 122, 0.075);
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.03);
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.05);
 }
 
@@ -1168,7 +1197,7 @@ textarea.form-control.short {
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
-  z-index: 3;
+  z-index: 9;
   left: 8px;
   top: 7px;
 }
@@ -1178,7 +1207,7 @@ textarea.form-control.short {
   position: absolute;
   width: 0px;
   height: 3px;
-  background: #555;
+  background: #444;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1194,7 +1223,7 @@ textarea.form-control.short {
   position: absolute;
   width: 0px;
   height: 3px;
-  background: #555;
+  background: #444;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1215,8 +1244,8 @@ textarea.form-control.short {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
-  background-color: #4b836d;
-  background-color: rgba(84, 146, 122, 0.075);
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.03);
   /* OPACITY AND COLOR OF THE RADIO AND CHECKBOX */
   position: relative;
   left: 0;
@@ -1238,7 +1267,7 @@ textarea.form-control.short {
 }
 .checkbox_radio_container input[type="checkbox"]:checked ~ .wrapper, .checkbox_radio_container input[type="radio"]:checked ~ .wrapper {
   transition: all 450ms;
-  background-color: #54927a;
+  background-color: #3333ff;
   color: #fff;
 }
 
@@ -1263,7 +1292,7 @@ textarea.form-control.short {
 }
 
 .container_check input:checked ~ .checkmark {
-  background-color: #54927a;
+  background-color: #3333ff;
   border: 1px solid transparent;
 }
 
@@ -1352,7 +1381,7 @@ textarea.form-control.short {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #54927a;
+  background: #3333ff;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;

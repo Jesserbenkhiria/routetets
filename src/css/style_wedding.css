@@ -61,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  color:#d47e00;
+  color: #d47e00;
 }
 
 p {
@@ -435,7 +435,7 @@ a.btn_scroll_to {
 }
 @media (max-width: 767px) {
   .content-left-wrapper {
-    height: 90vh !important;
+    height: 100vh !important;
     padding: 95px 15px 60px 15px;
   }
 }
