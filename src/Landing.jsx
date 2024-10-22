@@ -9,7 +9,7 @@ import axios from "axios";
 import { toast, Toaster } from "sonner";
 import img from "./img/finalback.png";
 
-function Form() {
+function Landing() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -388,4 +388,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default Landing;

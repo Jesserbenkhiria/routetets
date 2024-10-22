@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import Landing from './Landing';
+import User from './User';
 
 // Example components for routing
 function Home() {
@@ -14,7 +16,7 @@ function About() {
 }
 
 function Contact() {
-  return <h2>Contact Page</h2>;
+  return <Landing />;
 }
 
 function App() {
@@ -35,7 +37,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<User />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
