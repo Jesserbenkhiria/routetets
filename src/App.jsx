@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Form />} />
-        <Route path="/user/:id" element={<User />} />
+        <Route path="/user/*" element={<User />} />
         <Route path="/hello" element={<Hello />} />
         <Route path="*" element={<NotFound />} /> {/* Fallback route */}
       </Routes>
