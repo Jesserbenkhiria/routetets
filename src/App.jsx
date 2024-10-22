@@ -22,23 +22,9 @@ function Contact() {
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/user">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/user/*" element={<User />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Contact />} />
+        <Route path="/user/:id" element={<User />} />
       </Routes>
     </Router>
   );
